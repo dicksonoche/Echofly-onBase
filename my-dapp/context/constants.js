@@ -5,7 +5,7 @@ import axios from "axios";
 import socialNetwork from "./SocialNetwork.json";
 
 export const CONTRACT_ABI = socialNetwork.abi;
-export const CONTRACT_ADDRESS = "0x6bCA58eEeAbE906f8f5b7BaF4AA48734b87433EC";
+export const CONTRACT_ADDRESS = "0x0E7E704Fe5A77325F6a189bbee75d01A11F2Fd3d";
 
 //PINATA KEYS
 export const PINATA_API_KEY = "049ef711b8169f4e9d0a";
@@ -98,7 +98,7 @@ const changeNetwork = async ({ networkName }) => {
 };
 
 export const handleNetworkSwitch = async () => {
-  const networkName = "base_mainnet";
+  const networkName = "base_sepolia";
   await changeNetwork({ networkName });
 };
 
